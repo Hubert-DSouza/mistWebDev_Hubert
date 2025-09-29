@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  background: red;     
+  color: white;           
+  text-align: center;
+}
+
+
+header {
+  background: black;
+  padding: 15px;
+}
+
+
+.latest-news {
+  background: rgb(188, 255, 186);
+  color: black;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+.standings {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.standings div {
+  background: rgb(255, 252, 78);
+  color: black;
+  padding: 10px;
+  width: 40%;
+}
+
+
+
+.portfolio {
+  margin: 20px;
+}
+
+.card {
+  display: inline-block;
+  background: rgb(168, 255, 239);
+  color: black;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+}
+
+.card img {
+  width: 100%;
+}
+
+
+footer {
+  background: black;
+  padding: 10px;
+  
+}
