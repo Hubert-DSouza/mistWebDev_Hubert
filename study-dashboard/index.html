@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Student Command Center</h1>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+      </header>
+
+      <main class="dashboard-grid">
+        <!-- Pomodoro Section -->
+        <section class="card pomodoro">
+          <h2>Pomodoro Timer</h2>
+          <div class="timer-display" id="timer">25:00</div>
+          <div class="timer-controls">
+            <button id="start-btn">Start</button>
+            <button id="pause-btn">Pause</button>
+            <button id="reset-btn">Reset</button>
+          </div>
+        </section>
+
+        <!-- Tasks Section -->
+        <section class="card tasks">
+          <h2>Daily Tasks</h2>
+          <div class="input-group">
+            <input type="text" id="task-input" placeholder="Add a new task..." />
+            <button id="add-task-btn">Add</button>
+          </div>
+          <ul id="task-list">
+            <!-- Tasks will go here -->
+          </ul>
+        </section>
+
+        <!-- Progress Section -->
+        <section class="card progress">
+          <h2>Subject Progress</h2>
+          <div class="input-group">
+            <input type="text" id="subject-input" placeholder="Subject Name" />
+            <input type="number" id="percent-input" placeholder="%" min="0" max="100" />
+            <button id="add-subject-btn">Add</button>
+          </div>
+          <div id="progress-list">
+            <!-- Progress bars go here -->
+          </div>
+        </section>
+
+        <!-- Distraction Blocker / Quotes -->
+        <section class="card quotes">
+          <h2>Focus & Motivation</h2>
+          <blockquote id="quote-display">
+            "The secret of getting ahead is getting started."
+          </blockquote>
+        </section>
+      </main>
+    </div>
+    <script src="app.js" defer></script>
+  </body>
+</html>
